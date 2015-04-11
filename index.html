@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="css/html5shiv.min.js"></script>
+      <script src="css/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body ondragstart="return false;" ondrop="return false;">
+    <div class="tax-container">
+      <div class="tax-header">
+        <div class="tax-header-title noselect">
+          Meldewesen
+        </div>
+        <div class="tax-header-session noselect">
+          Angemeldet: Meyer Florian [FMEY]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">abmelden</a>
+        </div>
+        <div class="tax-header-administration noselect">
+		  <div class="tax-header-administration-icon noselect">
+            <span class="glyphicon glyphicon-cog" style="vertical-align: -2px;" aria-hidden="true"></span>
+          </div>
+          <ul class="tax-header-administration-ul noselect">
+            <a href="#"><li class="tax-header-administration-li tax-header-administration-li-top">Meldung importieren...</li></a>
+            <a href="#"><li class="tax-header-administration-li">Job-Administration...</li></a>
+            <a href="#"><li class="tax-header-administration-li">Job-Parameter...</li></a>
+            <a href="#"><li class="tax-header-administration-li tax-header-administration-li-bottom">Konfiguration aktualisieren</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="tax-navigation">
+        <a href="#"><div class="tax-navigation-item noselect">Startseite</div></a>
+        <a href="#"><div class="tax-navigation-item noselect">Meldungen</div></a>
+        <div class="tax-navigation-environment noselect">
+          Umgebung: ZG_PROD
+        </div>
+      </div>
+      <!--
+      <div class="tax-message tax-message-error">
+        Bitte erfassen Sie einen E-Mail Empf&auml;nger f&uuml;r die Zur&uuml;ckweisung
+      </div>
+      -->
+      <div class="tax-message tax-message-warning">
+        F&uuml;r diese Person liegt eine Meldungssperre vor
+      </div>
+      <!--
+      <div class="tax-message tax-message-success">
+        Einzelmeldungsverarbeitung abgeschlossen
+      </div>
+      -->
+      <div class="tax-content">
+        <div class="tax-content-detail">
+          <div class="tax-content-detail-header">
+            <div class="tax-content-detail-header-title">
+              Bestellung Steuermeldung AHV - Kellenberger, Christoph
+            </div>
+            <div class="tax-content-detail-header-subtitle">
+              Steuerjahr: 2015
+            </div>
+            <div class="tax-content-detail-header-actions">
+              <div class="tax-content-detail-header-actions-group">
+                <form class="tax-content-detail-header-actions-form" action="index.html">
+                  <button type="submit" class="btn btn-primary btn-sm" id="process">Verarbeiten</button>
+                </form>
+              </div>
+              <div class="tax-content-detail-header-actions-group">
+                <form class="tax-content-detail-header-actions-form" action="index.html">
+                  <button type="submit" class="btn btn-primary btn-sm" id="release">Freigeben</button>
+                </form>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="reject" data-toggle="dropdown" aria-expanded="false">Zur&uuml;kweisen <span class="caret"></span></button>
+                  <div class="dropdown-menu tax-dropdown-menu" role="menu">
+                    <form class="tax-content-detail-header-actions-form" action="index.html">
+                      <div class="form-group">
+                        <label for="rejectRecipient">E-Mail Empf&auml;nger</label>
+                        <input type="text" class="form-control tax-form-control-input" id="rejectRecipient" value="info@akzug.ch">
+                      </div>
+                      <div class="form-group">
+                        <label for="rejectRemark">Bemerkung</label>
+                        <input type="text" class="form-control tax-form-control-input" id="rejectRemark">
+                      </div>
+                      <div class="tax-form-control-buttons">
+                        <button type="submit" class="btn btn-primary btn-sm">Zur&uuml;kweisen</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="annul" data-toggle="dropdown" aria-expanded="false">Annullieren <span class="caret"></span></button>
+                  <div class="dropdown-menu tax-dropdown-menu" role="menu">
+                    <form class="tax-content-detail-header-actions-form" action="index.html">
+                      <div class="form-group">
+                        <label for="annulRemark">Bemerkung</label>
+                        <input type="text" class="form-control tax-form-control-input" id="annulRemark">
+                      </div>
+                      <div class="tax-form-control-buttons">
+                        <button type="submit" class="btn btn-primary btn-sm">Annullieren</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="tax-content-detail-header-actions-group">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="inactivate" data-toggle="dropdown" aria-expanded="false">Inaktivieren <span class="caret"></span></button>
+                  <div class="dropdown-menu tax-dropdown-menu" role="menu">
+                    <form class="tax-content-detail-header-actions-form" action="index.html">
+                      <div class="form-group">
+                        <label for="inactivateRemark">Bemerkung</label>
+                        <input type="text" class="form-control tax-form-control-input" id="inactivateRemark">
+                      </div>
+                      <div class="tax-form-control-buttons">
+                        <button type="submit" class="btn btn-primary btn-sm">Inaktivieren</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="block" data-toggle="dropdown" aria-expanded="false">Blockieren <span class="caret"></span></button>
+                  <div class="dropdown-menu tax-dropdown-menu" role="menu">
+                    <form class="tax-content-detail-header-actions-form" action="index.html">
+                      <div class="form-group">
+                        <label for="blockRemark">Bemerkung</label>
+                        <input type="text" class="form-control tax-form-control-input" id="blockRemark">
+                      </div>
+                      <div class="tax-form-control-buttons">
+                        <button type="submit" class="btn btn-primary btn-sm">Blockieren</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <form class="tax-content-detail-header-actions-form" action="index.html">
+                  <button type="submit" class="btn btn-primary btn-sm" id="reset">Zur&uuml;cksetzen</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="tax-content-detail-content">
+            <div class="tax-content-detail-content-container">
+              <div class="tax-content-detail-content-box">
+                <div class="tax-content-detail-content-box-title">
+                  Meldungsdetail
+                </div>
+                <div class="tax-content-detail-content-box-content">
+                  <table class="data">
+                    <tr>
+                      <td>Bestellungsumfang</td>
+                      <td>SE inkl. Basisdaten, ANOBAG inkl. Basisdaten, Gesch&auml;ftsdaten</td>
+                    </tr>
+                    <tr>
+                      <td>Erwerbst&auml;tigkeit</td>
+                      <td>SE und ANOBAG</td>
+                    </tr>
+                    <tr>
+                      <td>AHV-pflichtige Person</td>
+                      <td>Steuerpflichtiger</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tax-content-detail-content-container">
+              <div class="tax-content-detail-content-box">
+                <div class="tax-content-detail-content-box-title">
+                  Steuerpflichtiger
+                </div>
+                <div class="tax-content-detail-content-box-content">
+                  <table class="data">
+                    <tr>
+                      <td>Neue AHV-Nummer</td>
+                      <td>756.4581.2865.34</td>
+                    </tr>
+                    <tr>
+                      <td>Name</td>
+                      <td>Kellenberger</td>
+                    </tr>
+                    <tr>
+                      <td>Vorname</td>
+                      <td>Christoph</td>
+                    </tr>
+                    <tr>
+                      <td>Geschlecht</td>
+                      <td>m&auml;nnlich</td>
+                    </tr>
+                    <tr>
+                      <td>Geburtsdatum</td>
+                      <td>23.02.1985</td>
+                    </tr>
+                    <tr>
+                      <td>Zivilstand</td>
+                      <td>verheiratet</td>
+                    </tr>
+                    <tr>
+                      <td>Zivilstandsdatum</td>
+                      <td>15.06.2005</td>
+                    </tr>
+                    <tr>
+                      <td>Eintrittsdatum</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Austrittsdatum</td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div class="tax-content-detail-content-box tax-content-detail-content-box-inner">
+                    <div class="tax-content-detail-content-box-title">
+                      Externe Personen-ID
+                    </div>
+                    <div class="tax-content-detail-content-box-content">
+                      <table class="list">
+                        <tr>
+                          <td>Typ</td>
+                          <td>ID-Kategorie</td>
+                          <td>ID-Nummer</td>
+                        </tr>
+                        <tr>
+                          <td>Andere Personen-ID</td>
+                          <td>CH.AHV</td>
+                          <td>55150323117</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tax-content-detail-content-box tax-content-detail-content-box-inner">
+                    <div class="tax-content-detail-content-box-title">
+                      Adresse
+                    </div>
+                    <div class="tax-content-detail-content-box-content">
+                      <table class="data">
+                        <tr>
+                          <td>Adresszeile 1</td>
+                          <td>Bahnhoftsrasse 11</td>
+                        </tr>
+                        <tr>
+                          <td>Adresszeile 2</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Strasse</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Hausnummer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Wohnungsnummer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Postfach</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Postfachtext</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Gebiet</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ortsname</td>
+                          <td>Zug</td>
+                        </tr>
+                        <tr>
+                          <td>Schweizer Postleitzahl</td>
+                          <td>6300</td>
+                        </tr>
+                        <tr>
+                          <td>Zusatzziffer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ordnungsziffer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ausl&auml;ndische Postleitzahl</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Land</td>
+                          <td>CH</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tax-content-detail-content-box">
+                <div class="tax-content-detail-content-box-title">
+                  Ehepartner
+                </div>
+                <div class="tax-content-detail-content-box-content">
+                  <table class="data">
+                    <tr>
+                      <td>Neue AHV-Nummer</td>
+                      <td>756.4581.2865.35</td>
+                    </tr>
+                    <tr>
+                      <td>Name</td>
+                      <td>Kellenberger</td>
+                    </tr>
+                    <tr>
+                      <td>Vorname</td>
+                      <td>Andrea</td>
+                    </tr>
+                    <tr>
+                      <td>Geschlecht</td>
+                      <td>weiblich</td>
+                    </tr>
+                    <tr>
+                      <td>Geburtsdatum</td>
+                      <td>24.03.1986</td>
+                    </tr>
+                    <tr>
+                      <td>Zivilstand</td>
+                      <td>verheiratet</td>
+                    </tr>
+                    <tr>
+                      <td>Zivilstandsdatum</td>
+                      <td>15.06.2005</td>
+                    </tr>
+                    <tr>
+                      <td>Eintrittsdatum</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Austrittsdatum</td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <div class="tax-content-detail-content-box tax-content-detail-content-box-inner">
+                    <div class="tax-content-detail-content-box-title">
+                      Externe Personen-ID
+                    </div>
+                    <div class="tax-content-detail-content-box-content">
+                      <table class="list">
+                        <tr>
+                          <td>Typ</td>
+                          <td>ID-Kategorie</td>
+                          <td>ID-Nummer</td>
+                        </tr>
+                        <tr>
+                          <td>Andere Personen-ID</td>
+                          <td>CH.AHV</td>
+                          <td>55150323118</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tax-content-detail-content-box tax-content-detail-content-box-inner">
+                    <div class="tax-content-detail-content-box-title">
+                      Adresse
+                    </div>
+                    <div class="tax-content-detail-content-box-content">
+                      <table class="data">
+                        <tr>
+                          <td>Adresszeile 1</td>
+                          <td>Bahnhoftsrasse 11</td>
+                        </tr>
+                        <tr>
+                          <td>Adresszeile 2</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Strasse</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Hausnummer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Wohnungsnummer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Postfach</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Postfachtext</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Gebiet</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ortsname</td>
+                          <td>Zug</td>
+                        </tr>
+                        <tr>
+                          <td>Schweizer Postleitzahl</td>
+                          <td>6300</td>
+                        </tr>
+                        <tr>
+                          <td>Zusatzziffer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ordnungsziffer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ausl&auml;ndische Postleitzahl</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Land</td>
+                          <td>CH</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tax-content-detail-content-container">
+              <div class="tax-content-detail-content-box">
+                <div class="tax-content-detail-content-box-title">
+                  Absender-Institution
+                </div>
+                <div class="tax-content-detail-content-box-content">
+                  <div class="tax-content-detail-content-box tax-content-detail-content-box-inner">
+                    <div class="tax-content-detail-content-box-title">
+                      Organisation
+                    </div>
+                    <div class="tax-content-detail-content-box-content">
+                      <table class="data">
+                        <tr>
+                          <td>Name</td>
+                          <td>Ausgleichskasse Zug</td>
+                        </tr>
+                        <tr>
+                          <td>Zusatzzeile 1</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Zusatzzeile 2</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Titel</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Vorname</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Name</td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tax-content-detail-content-box tax-content-detail-content-box-inner">
+                    <div class="tax-content-detail-content-box-title">
+                      Adresse
+                    </div>
+                    <div class="tax-content-detail-content-box-content">
+                      <table class="data">
+                        <tr>
+                          <td>Adresszeile 1</td>
+                          <td>Baarerstrasse 11</td>
+                        </tr>
+                        <tr>
+                          <td>Adresszeile 2</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Strasse</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Hausnummer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Wohnungsnummer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Postfach</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Postfachtext</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Gebiet</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ortsname</td>
+                          <td>Zug</td>
+                        </tr>
+                        <tr>
+                          <td>Schweizer Postleitzahl</td>
+                          <td>6304</td>
+                        </tr>
+                        <tr>
+                          <td>Zusatzziffer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ordnungsziffer</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Ausl&auml;ndische Postleitzahl</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Land</td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tax-content-detail-content-box tax-content-detail-content-box-empty"></div>
+            </div>
+            <div class="tax-content-detail-content-container">
+              <div class="tax-content-detail-content-box">
+                <div class="tax-content-detail-content-box-title">
+                  Dokumente
+                </div>
+                <div class="tax-content-detail-content-box-content">
+                  <table class="list">
+                    <tr>
+                      <td>Dokument ID</td>
+                      <td>Haupt-<br />dokument</td>
+                      <td>Titel</td>
+                      <td>Datum</td>
+                      <td>Archiv-<br />status</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>MSG-000-004-380.001</td>
+                      <td>Ja</td>
+                      <td>Bestellung Steuermeldung AHV - Kellenberger, Christoph</td>
+                      <td>07.03.2012</td>
+                      <td>Neu</td>
+                      <td><div class="tax-content-detail-content-box-content-icon noselect"><a href="#"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></div></td>
+                    </tr>
+                    <tr>
+                      <td>MSG-000-004-380.002</td>
+                      <td>Nein</td>
+                      <td>R&uuml;ckweisung der Bestellung Steuermeldung - Kellenberger, Christoph</td>
+                      <td>08.03.2012</td>
+                      <td>Neu</td>
+                      <td><div class="tax-content-detail-content-box-content-icon noselect"><a href="#"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></div></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tax-content-overview">
+          <div class="tax-content-overview-paging noselect">
+            <div class="tax-content-overview-paging-text noselect">
+              Meldung 123456 / 654321
+            </div>
+            <div class="tax-content-overview-paging-icon noselect">
+              <a href="#"><span class="glyphicon glyphicon-circle-arrow-left" style="vertical-align: -2px;" aria-hidden="true"></span></a>
+            </div>
+            <div class="tax-content-overview-paging-icon noselect">
+              <a href="#"><span class="glyphicon glyphicon-circle-arrow-right" style="vertical-align: -2px;" aria-hidden="true"></span></a>
+            </div>
+          </div>
+          <div class="tax-content-overview-links noselect">
+            <a href="#">Bestellung</a> | 
+            <a href="#">Steuermeldung</a>
+          </div>
+          <div class="tax-content-overview-status">
+            <div class="tax-content-overview-status-icon noselect">
+              <img src="icons/status-task.png">
+              <div class="tax-content-overview-status-icon-flag">
+                <img src="icons/flag-inactive.png">
+              </div>
+            </div>
+            <div class="tax-content-overview-status-text">
+               Abzukl&auml;ren, Inaktiv, Blockiert
+            </div>
+            <div class="tax-content-overview-status-detail">
+              <table class="data">
+                <tr>
+                  <td>Abkl&auml;rungstyp</td>
+                  <td>Personenzuordnung</td>
+                </tr>
+                <tr>
+                  <td>Inaktivierungsbemerkung</td>
+                  <td>NVN muss im Register korrigiert werden, wird ansonsten falsch zugeordnet</td>
+                </tr>
+                <tr>
+                  <td>Blockierungsbemerkung</td>
+                  <td>Solange die Personenzuordnung falsch ist, darf keine Steuermeldung erfolgen</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="tax-content-overview-header">
+            <div id="tab-tax" class="tax-content-overview-header-tab">
+              <div class="tax-content-overview-header-tab-div">
+                <table class="data">
+                  <tr>
+                    <td>Registerstatus</td>
+                    <td>definitive Zuordnung</td>
+                  </tr>
+                  <tr>
+                    <td>Veranlagungsstatus</td>
+                    <td>rechtskr&auml;ftige Veranlagung</td>
+                  </tr>
+                  <tr>
+                    <td>Personen-Nr. Steuerpflichtiger</td>
+                    <td>1031-044-80</td>
+                  </tr>
+                  <tr>
+                    <td>Personen-Nr. Ehepartner</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Personen-Nr. Ehe/Partnerschaft</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Steuerpflicht g&uuml;ltig von</td>
+                    <td>01.01.2012</td>
+                  </tr>
+                  <tr>
+                    <td>Steuerpflicht g&uuml;ltig bis</td>
+                    <td>31.12.2012</td>
+                  </tr>
+                  <tr>
+                    <td>Steuerfall-Nr.</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Steuerfallversion-Nr.</td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="tab-reference" class="tax-content-overview-header-tab">
+              <div class="tax-content-overview-header-tab-div">
+                <table class="data">
+                  <tr>
+                    <td>Name</td>
+                    <td>Franziska Koller</td>
+                  </tr>
+                  <tr>
+                    <td>Abteilung</td>
+                    <td>Beitr&auml;ge</td>
+                  </tr>
+                  <tr>
+                    <td>Telefon</td>
+                    <td>0415604700</td>
+                  </tr>
+                  <tr>
+                    <td>E-Mail</td>
+                    <td>info@akzug.ch</td>
+                  </tr>
+                  <tr>
+                    <td>Andere</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Hersteller</td>
+                    <td>IGS GmbH</td>
+                  </tr>
+                  <tr>
+                    <td>Produkt</td>
+                    <td>Beitragswesen</td>
+                  </tr>
+                  <tr>
+                    <td>Produktversion</td>
+                    <td>1.2.3</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="tab-object" class="tax-content-overview-header-tab">
+              <div class="tax-content-overview-header-tab-div">
+                <table class="data">
+                  <tr>
+                    <td>Neue AHV-Nummer</td>
+                    <td>756.4581.2865.34</td>
+                  </tr>
+                  <tr>
+                    <td>Name</td>
+                    <td>Kellenberger</td>
+                  </tr>
+                  <tr>
+                    <td>Vorname</td>
+                    <td>Christoph</td>
+                  </tr>
+                  <tr>
+                    <td>Geschlecht</td>
+                    <td>m&auml;nnlich</td>
+                  </tr>
+                  <tr>
+                    <td>Geburtsdatum</td>
+                    <td>23.02.1985</td>
+                  </tr>
+                  <tr>
+                    <td>Zivilstand</td>
+                    <td>verheiratet</td>
+                  </tr>
+                  <tr>
+                    <td>Zivilstandsdatum</td>
+                    <td>15.06.2005</td>
+                  </tr>
+                  <tr>
+                    <td>Eintrittsdatum</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Austrittsdatum</td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="tab-comment" class="tax-content-overview-header-tab">
+              <div class="tax-content-overview-header-tab-div">
+                <p>Bitte beachten Sie, dass es sich bei dieser Meldung um eine Korrektur handelt, welche die vorg&auml;ngige Meldung ersetzt.</p>
+              </div>
+            </div>
+            <div id="tab-header" class="tax-content-overview-header-tab">
+              <div class="tax-content-overview-header-tab-div">
+                <table class="data">
+                  <tr>
+                    <td>Meldungs-ID</td>
+                    <td>MSG-000-004-380</td>
+                  </tr>
+                  <tr>
+                    <td>Meldungsrichtung</td>
+                    <td>Eingang</td>
+                  </tr>
+                  <tr>
+                    <td>Interne Meldung</td>
+                    <td>Nein</td>
+                  </tr>
+                  <tr>
+                    <td>Absender-ID</td>
+                    <td>e0f22d72-c7bd-42b7-8</td>
+                  </tr>
+                  <tr>
+                    <td>Originalabsender-ID</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Empf&auml;nger-ID</td>
+                    <td>2-ZG-5</td>
+                  </tr>
+                  <tr>
+                    <td>Nachrichten-ID</td>
+                    <td>3b642a91-056b-4745-8a01-9f4bee5ff6b7</td>
+                  </tr>
+                  <tr>
+                    <td>Unsere Gesch&auml;ftsreferenz-ID</td>
+                    <td>248211.2011.13</td>
+                  </tr>
+                  <tr>
+                    <td>Nachrichtentyp</td>
+                    <td>Steuermeldung AHV</td>
+                  </tr>
+                  <tr>
+                    <td>Subnachrichten-Typ</td>
+                    <td>Einzelbestellung</td>
+                  </tr>
+                  <tr>
+                    <td>Nachrichtendatum</td>
+                    <td>07.03.2012 00:00:00</td>
+                  </tr>
+                  <tr>
+                    <td>Datum erste Nachricht</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Aktion</td>
+                    <td>Anfrage</td>
+                  </tr>
+                  <tr>
+                    <td>Meldungspriorit&auml;t</td>
+                    <td>Sofortmeldung</td>
+                  </tr>
+                  <tr>
+                    <td>Letzte System-&Auml;nderung am</td>
+                    <td>23.03.2015 00:30:00</td>
+                  </tr>
+                  <tr>
+                    <td>Letzte Benutzer-&Auml;nderung am</td>
+                    <td>23.03.2015 15:28:06</td>
+                  </tr>
+                  <tr>
+                    <td>Letzte Benutzer-&Auml;nderung durch</td>
+                    <td>FMEY</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <ul class="tax-content-overview-header-tab-ul noselect">
+              <li class="tax-content-overview-header-tab-li"><a href="#tab-tax"><div class="tax-content-overview-header-tab-default">Register /<br />Veranlagung</div></a></li><li class="tax-content-overview-header-tab-li"><a href="#tab-reference"><div class="tax-content-overview-header-tab-default">Referenz /<br />Anwendung</div></a></li><li class="tax-content-overview-header-tab-li"><a href="#tab-object"><div class="tax-content-overview-header-tab-default">Objekt<br />&nbsp;</div></a></li><li class="tax-content-overview-header-tab-li"><a href="#tab-comment"><div class="tax-content-overview-header-tab-mark">Kommentar<br />&nbsp;</div></a></li><li class="tax-content-overview-header-tab-li"><a href="#tab-header"><div class="tax-content-overview-header-tab-default">Meldungs-<br />kopf</div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
