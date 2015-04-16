@@ -61,7 +61,6 @@ a .glyphicon:active {
 }
 .list tr:nth-of-type(1) {
   font-weight: bold;
-  text-decoration: underline;
 }
 .list td {
   padding: 4px 10px 0px 0px;
@@ -119,8 +118,12 @@ a .glyphicon:active {
 .tax-header-administration:hover {
   color: #FFFFFF;
 }
+.tax-header-administration ul {
+  transition-delay: 0.4s;
+}
 .tax-header-administration:hover ul {
   visibility: visible;
+  transition-delay: 0s;
 }
 .tax-header-administration-ul {
   z-index: 1;
