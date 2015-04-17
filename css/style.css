@@ -416,6 +416,11 @@ a .glyphicon:active {
   top: 24px;
   left: 0px;
 }
+.tax-content-overview-status-icon-flag-internal {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+}
 .tax-content-overview-status-text {
   position: relative;
   left: 20px;
