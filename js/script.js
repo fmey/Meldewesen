@@ -63,6 +63,11 @@ $('#annul').click(function () {
     $('#annulRemark').focus();
   }, 0);
 });
+$('#followUp').click(function () {
+  setTimeout(function() {
+    $('#followUpRemark').focus();
+  }, 0);
+});
 $('#inactivate').click(function () {
   setTimeout(function() {
     $('#inactivateRemark').focus();

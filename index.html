@@ -45,7 +45,7 @@
         Bitte erfassen Sie einen E-Mail Empf&auml;nger f&uuml;r die Zur&uuml;ckweisung
       </div>
       -->
-      <div class="tax-message tax-message-warning">
+      <div class="tax-message tax-message-info">
         F&uuml;r diese Person liegt eine Meldungssperre vor
       </div>
       <!--
@@ -100,6 +100,24 @@
                       </div>
                       <div class="tax-form-control-buttons">
                         <button type="submit" class="btn btn-primary btn-sm">Annullieren</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="followUp" data-toggle="dropdown" aria-expanded="false">Wiedervorlage <span class="caret"></span></button>
+                  <div class="dropdown-menu tax-dropdown-menu" role="menu">
+                    <form class="tax-content-detail-header-actions-form" action="index.html">
+                      <div class="form-group">
+                        <label for="followUpDate">Datum</label>
+                        <input type="text" class="form-control tax-form-control-input" id="followUpDate" value="15.12.2015">
+                      </div>
+                      <div class="form-group">
+                        <label for="followUpRemark">Bemerkung</label>
+                        <input type="text" class="form-control tax-form-control-input" id="followUpRemark">
+                      </div>
+                      <div class="tax-form-control-buttons">
+                        <button type="submit" class="btn btn-primary btn-sm">Wiedervorlage</button>
                       </div>
                     </form>
                   </div>

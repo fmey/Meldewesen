@@ -225,9 +225,9 @@ a .glyphicon:active {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   background-color: #00C030;
 }
-.tax-message-warning {
+.tax-message-info {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  background-color: #F09030;
+  background-color: #C0C030;
 }
 .tax-message-error {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
