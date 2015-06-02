@@ -598,7 +598,7 @@ a .glyphicon:active {
 .tax-content-overview-header-tab:target:nth-of-type(4) ~ .tax-content-overview-header-tab-ul .tax-content-overview-header-tab-li:nth-of-type(4) .tax-content-overview-header-tab-mark,
 .tax-content-overview-header-tab:target:nth-of-type(5) ~ .tax-content-overview-header-tab-ul .tax-content-overview-header-tab-li:nth-of-type(5) .tax-content-overview-header-tab-mark {
   background-image: none;
-  background-color: #606068;
+  background-color: #900000;
 }
 .tax-content-overview-header-tab-li:last-of-type a,
 .tax-content-overview-header-tab:target:nth-of-type(1) ~ .tax-content-overview-header-tab-ul .tax-content-overview-header-tab-li:nth-of-type(1) a,
