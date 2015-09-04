@@ -43,6 +43,11 @@ a .glyphicon:active {
   user-select: none;
   cursor: default;
 }
+.icon24 {
+	position: relative;
+	font-size: 24px;
+	line-height: 24px;
+}
 .data {
   width: 100%;
 }
