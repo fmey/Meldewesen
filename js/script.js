@@ -78,3 +78,8 @@ $('#block').click(function () {
     $('#blockRemark').focus();
   }, 0);
 });
+$('#editNote').click(function () {
+  setTimeout(function() {
+    $('#note').focus();
+  }, 0);
+});

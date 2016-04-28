@@ -155,10 +155,45 @@
                 <form class="tax-content-detail-header-actions-form" action="index.html">
                   <button type="submit" class="btn btn-primary btn-sm" id="reset">Zur&uuml;cksetzen</button>
                 </form>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="editNote" data-toggle="dropdown" aria-expanded="false">Notiz bearbeiten <span class="caret"></span></button>
+                  <div class="dropdown-menu tax-dropdown-menu" role="menu">
+                    <form class="tax-content-detail-header-actions-form" action="index.html">
+                      <div class="form-group">
+                        <label for="note">Notiz</label>
+                        <textarea rows="8" class="form-control tax-form-control-textarea" id="note">Dies ist ein mehrzeiliger Notiztext, der darauf hinweist, dass...
+- diese Punkte
+- unbedingt
+- zu beachten sind
+
+Diese gelbe Notiz-Box wird nur angezeigt, wenn eine Notiz vorhanden ist. Sie wird beim Drucken der Meldung ebenfalls ausgedruckt. Formatierungsm&ouml;glichkeiten sind nicht vorgesehen. Diese Notiz kann &uuml;ber den Button "Notiz bearbeiten" ge&auml;ndert oder entfernt werden.</textarea>
+                      </div>
+                      <div class="tax-form-control-buttons">
+                        <button type="submit" class="btn btn-primary btn-sm">Speichern</button>
+                        <button type="button" class="btn btn-primary btn-sm">Löschen</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="tax-content-detail-content">
+            <div class="tax-content-detail-content-container">
+              <div class="tax-content-detail-content-box">
+                <div class="tax-content-detail-content-box-title tax-content-detail-content-box-title-note">
+                  Notiz
+                </div>
+                <div class="tax-content-detail-content-box-content tax-content-detail-content-box-content-note">
+                  Dies ist ein mehrzeiliger Notiztext, der darauf hinweist, dass...<br />
+				  - diese Punkte<br />
+				  - unbedingt<br />
+				  - zu beachten sind<br />
+				  <br />
+				  Diese gelbe Notiz-Box wird nur angezeigt, wenn eine Notiz vorhanden ist. Sie wird beim Drucken der Meldung ebenfalls ausgedruckt. Formatierungsm&ouml;glichkeiten sind nicht vorgesehen. Diese Notiz kann &uuml;ber den Button "Notiz bearbeiten" ge&auml;ndert oder entfernt werden.
+                </div>
+              </div>
+            </div>
             <div class="tax-content-detail-content-container">
               <div class="tax-content-detail-content-box">
                 <div class="tax-content-detail-content-box-title">

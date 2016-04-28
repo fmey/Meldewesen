@@ -77,6 +77,9 @@ a .glyphicon:active {
 .tax-form-control-input {
   width: 400px;
 }
+.tax-form-control-textarea {
+  width: 400px;
+}
 .tax-form-control-buttons {
   text-align: right;
 }
@@ -333,6 +336,9 @@ a .glyphicon:active {
   font-size: 8pt;
   font-weight: bold;
 }
+.tax-content-detail-content-box-title-note {
+  background-color: #F9F999;
+}
 .tax-content-detail-content-box-content {
   padding: 2px 10px 6px 10px;
   border: 1px solid #E0E0E9;
@@ -343,6 +349,9 @@ a .glyphicon:active {
 }
 .tax-content-detail-content-box-content td {
   font-size: 8pt;
+}
+.tax-content-detail-content-box-content-note {
+  background-color: #FFFFCC;
 }
 @media screen and (min-width: 1280px) {
   .tax-content-detail-content-box-title {
