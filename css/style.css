@@ -339,6 +339,10 @@ a .glyphicon:active {
 .tax-content-detail-content-box-title-note {
   background-color: #F9F999;
 }
+.tax-content-detail-content-box-title-info {
+  font-weight: normal;
+  font-style: italic;
+}
 .tax-content-detail-content-box-content {
   padding: 2px 10px 6px 10px;
   border: 1px solid #E0E0E9;
